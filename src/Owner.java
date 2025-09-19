@@ -2,8 +2,8 @@
  * Represents an owner with a name and phone number.
  */
 public class Owner {
-    private String owner;
-    private int phone_number;
+    protected String owner;
+    protected int phone_number;
 
     /**
      * Constructs an Owner object with the specified name and phone number.
