@@ -2,6 +2,44 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * The App class serves as the main entry point for the Real Estate Dealer
+ * Portal application.
+ * It provides a console-based interface for users to register residential
+ * estates and book them.
+ * 
+ * <p>
+ * Features:
+ * <ul>
+ * <li>Register new estates with details such as name, location, owner, price,
+ * phone number, and associated assets.</li>
+ * <li>Book an estate from the list of registered estates, displaying owner and
+ * estate details.</li>
+ * <li>Interactive menu-driven navigation for user actions.</li>
+ * </ul>
+ * 
+ * <p>
+ * Usage:
+ * <ol>
+ * <li>Run the application.</li>
+ * <li>Follow the prompts to register estates or book an existing estate.</li>
+ * <li>Exit the application when done.</li>
+ * </ol>
+ * 
+ * <p>
+ * Dependencies:
+ * <ul>
+ * <li>ResidentialEstate class for estate representation.</li>
+ * <li>Java standard libraries: Scanner, ArrayList, List.</li>
+ * </ul>
+ * 
+ * <p>
+ * Note: This class assumes the existence of a ResidentialEstate class with
+ * appropriate constructors and methods.
+ * 
+ * @author Brandon Noronha
+ * @version 1.0
+ */
 public class App {
     public static void main(String[] args) throws Exception {
         // System.out.println("Hello, World!");
@@ -105,7 +143,8 @@ public class App {
             // Collect asset details from the user
             System.out.print("Asset Type: ");
             String type = input.nextLine();
-            if (type.isEmpty()) type = input.nextLine(); // consume leftover newline
+            if (type.isEmpty())
+                type = input.nextLine(); // consume leftover newline
             System.out.print("Asset Name: ");
             String name = input.nextLine();
             System.out.print("Asset Price: ");
